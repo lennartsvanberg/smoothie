@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smoothie Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Välkommen till Smoothie Shop</h1>
+        <p>Fräscha och nyttiga smoothies direkt till din dörr!</p>
+    </header>
+
+    <section id="menu">
+        <h2>Våra Smoothies</h2>
+        <div class="smoothie">
+            <img src="barbomb.jpg" alt="Bärbomb Smoothie">
+            <h3>Bärbomb</h3>
+            <p>En mix av färska bär och yoghurt.</p>
+            <button onclick="addToCart('Bärbomb')">Lägg i kundvagn</button>
+        </div>
+        <div class="smoothie">
+            <img src="green-smoothie.jpg" alt="Grön Energi Smoothie">
+            <h3>Grön Energi</h3>
+            <p>Gröna grönsaker för en boost av energi.</p>
+            <button onclick="addToCart('Grön Energi')">Lägg i kundvagn</button>
+        </div>
+        <div class="smoothie">
+            <img src="tropiskdelight.jpeg" alt="Tropisk Delight Smoothie">
+            <h3>Tropisk Delight</h3>
+            <p>Exotiska frukter för en smak av tropikerna.</p>
+            <button onclick="addToCart('Tropisk Delight')">Lägg i kundvagn</button>
+        </div>
+    </section>
+
+    <section id="cart">
+        <h2>Din Kundvagn</h2>
+        <ul id="cart-items"></ul>
+        <p id="total-price"></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
